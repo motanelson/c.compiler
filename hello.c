@@ -1,8 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+void printf(char* fmt) { }
 
-
-int main(){
-    printf("hello world .....\n");
-    return 0;
-}
+ void main() {
+    printf("Hello world!\n");
+ }
