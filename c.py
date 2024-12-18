@@ -15,7 +15,4 @@ except Exception as e:
     print ("error:")
      
 else:
-    # Salve o objeto
-    f1=open(files+".o","wb")
-    f1.write(obj.sections[1].data)
-    f1.close()
+    objcopy(obj, 'code', 'elf', files+".o")
