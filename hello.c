@@ -1,5 +1,7 @@
-void printf(char* fmt) { }
+void kernel_main();
+void printf(char *s){}
 
- void main() {
+void kernel_main() {
     printf("Hello world!\n");
+    
  }
