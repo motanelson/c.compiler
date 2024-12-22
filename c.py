@@ -4,8 +4,12 @@ import io
 from ppci.api import cc
 from ppci.api import asm
 source_files = io.StringIO("""
-section code
-_start:
+start:
+db 0xb8 
+db 0xff 
+db 0x4c 
+db 0xcd 
+db 0x21
 mov eax,0x21cd4cff	
 """)
 obj2 = asm(source_files, 'x86_64')
