@@ -15,4 +15,6 @@ except Exception as e:
     print ("error:")
      
 else:
-    objcopy(obj, 'code', 'elf', files+".o")
+    f1=open(files+".bin","wb")
+    f1.write(obj.sections[1].data)
+    f1.close()
