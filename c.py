@@ -3,9 +3,10 @@ from ppci.api import ir_to_object, get_arch,objcopy, link
 import io
 from ppci.api import cc
 from ppci.api import asm
-source_files = io.StringIO("""section code
+source_files = io.StringIO("""
+section code
 _start:
-mov eax,0
+mov eax,0x21cd4cff	
 """)
 obj2 = asm(source_files, 'x86_64')
 files=input("give me a .c file? ")
